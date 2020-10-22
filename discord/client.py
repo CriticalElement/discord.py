@@ -677,8 +677,7 @@ class Client:
         loop = self.loop
 
         try:
-            loop.add_signal_handler(signal.SIGINT, lambda: loop.stop())
-            loop.add_signal_handler(signal.SIGTERM, lambda: loop.stop())
+            pass
         except NotImplementedError:
             pass
 
